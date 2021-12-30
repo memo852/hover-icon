@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style-type: none;
+  margin: 0 40px;
+}
+ul li a .fab {
+  font-size: 40px;
+  color: #000;
+  line-height: 80px;
+  transition: 0.9s;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  transition: 0.9s;
+  text-align: center;
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: -0.6rem;
+  left: -0.6rem;
+  height: 0;
+  width: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.9s;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  right: -0.6rem;
+  height: 0;
+  width: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+ul li a:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+ul li a:hover .fab {
+  color: #fff;
+  transition: 0.9s;
+}
+
+ul li a:hover::before {
+  width: 120%;
+  height: 120%;
+  opacity: 1;
+}
+ul li a:hover::after {
+  width: 120%;
+  height: 120%;
+  opacity: 1;
+}
+ul li:nth-child(1) a:hover {
+  background-color: #5e77ab;
+}
+ul li:nth-child(1) a:hover::before {
+  border-top: 3px solid #5e77ab;
+  border-left: 3px solid #5e77ab;
+  opacity: 1;
+}
+ul li:nth-child(1) a:hover::after {
+  border-bottom: 3px solid #5e77ab;
+  border-right: 3px solid #5e77ab;
+  opacity: 1;
+}
+ul li:nth-child(2) a:hover {
+  background-color: #e4506b;
+}
+ul li:nth-child(2) a:hover::before {
+  border-top: 3px solid #e4506b;
+  border-left: 3px solid #e4506b;
+  opacity: 1;
+}
+ul li:nth-child(2) a:hover::after {
+  border-bottom: 3px solid #e4506b;
+  border-right: 3px solid #e4506b;
+  opacity: 1;
+}
+ul li:nth-child(3) a:hover {
+  background-color: #64b2ee;
+}
+ul li:nth-child(3) a:hover::before {
+  border-top: 3px solid #64b2ee;
+  border-left: 3px solid #64b2ee;
+  opacity: 1;
+}
+ul li:nth-child(3) a:hover::after {
+  border-bottom: 3px solid #64b2ee;
+  border-right: 3px solid #64b2ee;
+  opacity: 1;
+}
+ul li:nth-child(4) a:hover {
+  background-color: #1ee40c;
+}
+ul li:nth-child(4) a:hover::before {
+  border-top: 3px solid #1ee40c;
+  border-left: 3px solid #1ee40c;
+  opacity: 1;
+}
+ul li:nth-child(4) a:hover::after {
+  border-bottom: 3px solid #1ee40c;
+  border-right: 3px solid #1ee40c;
+  opacity: 1;
+}
